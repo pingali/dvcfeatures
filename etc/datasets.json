@@ -1,0 +1,7 @@
+{
+    "datasets": {
+	"targets": {
+	    "root": "targets"
+	}
+    }
+}
