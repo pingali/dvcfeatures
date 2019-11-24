@@ -37,7 +37,7 @@ ply==3.11
 pyasn1==0.4.8
 pyfiglet==0.8.post1
 pyparsing==2.4.5
-pyspark==2.2.0
+pyspark==2.2.2
 python-dateutil==2.8.0
 PyYAML==5.1.2
 requests==2.22.0
