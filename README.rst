@@ -14,10 +14,10 @@ Automated ML Feature Storage in DVC
         :alt: Documentation Status
 
 
-A Python package to store computed features in `DVC
+*dvcfeatures* is a Python package to store computed features in `DVC
 <http://www.dvc.org/>`_.  DVC is an open-source data version control
-system for ML. It is a wrapper around dvc commands to allow discovery
-and automated commit of the freshly generated datasets.
+system for ML. *dvcfeatures* is a wrapper around dvc commands to allow
+discovery and automated commit of the freshly generated datasets.
 
 * Free software: MIT license
 * Documentation: https://dvcfeatures.readthedocs.io.
@@ -124,7 +124,7 @@ Create an empty repo and setup the DVC as usual::
     # Add a dvc s3 repo
     $ dvc remote add demo s3://...webdatasets/versioned/data
 
-Create a dvcfeatures configuration file `datasets.json`::
+Create a dvcfeatures configuration file *datasets.json*::
 
     $ cd webdatasets
     $ ls .
