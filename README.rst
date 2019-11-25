@@ -95,7 +95,18 @@ The feature store git repository looks like this::
     │       ├── 2-3-Butane.dvc
     │       └── data -> ...external3... (symbolic link)
     ...
-    
+
+Limitations
+-----------
+
+1. Only unit of each dataset can be added for now. This is because
+   often there are cleaner processes running that remove
+   directories. We dont want to be impacted by the garbage collection
+   process. 
+   
+2. A .gitignore is created in the external directory which could
+   create problems for the consuming service. 
+
 Installation
 ------------
 
@@ -127,7 +138,7 @@ Create a dvcfeatures configuration file `datasets.json`::
          },
         "datasets": {
             "targets": {
-                "remote": "%(root)s/%(dataset)s",
+                "remote": "demo",
                 "root": "$SCRIBBLE_DATA/shared/datasets/experiment/targetset/%(targetset_version)s"
              }
         }
